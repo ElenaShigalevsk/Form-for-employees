@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap DaeteTimePicker</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+	
+
+  </head>
+  <body>
+
+<div class="container">
+<div class="row">
+	<div class="col-md-12">
+		<form action="mail.php" method="post" class="form-horizontal">
+			<div class="form-group">
+					<label for="text" class="col-md-2 control-label">Желаемая должность</label>
+					<div class="col-md-3">
+					<select class="form-control" name="position" id="position">
+						<option value="">---</option>
+						<option value="Капитан">Капитан</option>
+						<option value="Старший помощник капитана">Старший помощник капитана</option>
+						<option value="2й помощник капитана">2й помощник капитана</option>
+						<option value="3й помощник капитана">3й помощник капитана</option>
+						<option value="4й помощник капитана">4й помощник капитана</option>
+						<option value="Пом. Капитана по РЭ">Пом. Капитана по РЭ</option>
+						<option value="Старший механик">Старший механик</option>
+						<option value="2й механик">2й механик</option>
+						<option value="3й механик">3й механик</option>
+						<option value="4й механик">4й механик</option>
+						<option value="Моторист">Моторист</option>
+						<option value="ГЭС">ГЭС</option>
+						<option value="Старший электромеханик">Старший электромеханик</option>
+						<option value="2й электромеханик">2й электромеханик</option>
+						<option value="3й электромеханик">3й электромеханик</option>
+						<option value="Эл.механик на судовой автоматике">Эл.механик на судовой автоматике</option>
+						<option value="Электрик">Электрик</option>
+						<option value="Старший рефмеханик">Старший рефмеханик</option>
+						<option value="2й рефмеханик">2й рефмеханик</option>
+						<option value="3й рефмеханик">3й рефмеханик</option>
+						<option value="Реф. Машинист">Реф. Машинист</option>
+						<option value="Старший механик-наладчик ТО">Старший механик-наладчик ТО</option>
+						<option value="2й механик-наладчик ТО">2й механик-наладчик ТО</option>
+						<option value="3й механик-наладчик ТО">3й механик-наладчик ТО</option>
+						<option value="Слесаль ТО">Слесаль ТО</option>
+						<option value="Токарь">Токарь</option>
+						<option value="Пом. капитана по добыче (Ст. Траллмастер)">Пом. капитана по добыче (Ст. Траллмастер)</option>
+						<option value="Мастер добычи">Мастер добычи</option>
+						<option value="Боцман">Боцман</option>
+						<option value="Матрос 1го класса (Добыча)">Матрос 1го класса (Добыча)</option>
+						<option value="Матрос-лебедчик">Матрос-лебедчик</option>
+						<option value="Пом. Капитана по Производству (Зав. Производством)">Пом. Капитана по Производству (Зав. Производством)</option>
+						<option value="Мастер смены">Мастер смены</option>
+						<option value="Технолог по качеству продукции">Технолог по качеству продукции</option>
+						<option value="Матрос вахтенный">Матрос вахтенный</option>
+						<option value="Матрос бадерщик">Матрос бадерщик</option>
+						<option value="Матрос трюмный">Матрос трюмный</option>
+						<option value="Матрос обработчик">Матрос обработчик</option>
+						<option value="Шеф повар">Шеф повар</option>
+						<option value="2й повар">2й повар</option>
+						<option value="3й повар">3й повар</option>
+						<option value="Матрос буфетчик">Матрос буфетчик</option>
+						<option value="Матрос дневальный">Матрос дневальный</option>
+						<option value="Машинист по стирке белья (Прачка)">Машинист по стирке белья (Прачка)</option>
+						<option value="Мастер по икре">Мастер по икре</option>
+						<option value="Матрос тальман">Матрос тальман</option>
+						<option value="Пожарный инспектор">Пожарный инспектор</option>
+						<option value="Судовой врач">Судовой врач</option>
+						<option value="Донкерман (Помповый машинист)">Донкерман (Помповый машинист)</option>
+
+
+					</select>
+					</div>
+
+				<label for="Kalendar" class="col-md-2 control-label">Доступен с </label>
+				<div class="input-group date col-md-2" id="datetimepicker1">
+					<input type="text" name="data" class="form-control" />
+					<span class="input-group-addon">
+						<span class="glyphicon-calendar glyphicon"></span>
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+					<label for="text" class="col-md-2 control-label" required>Фамилия</label>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="second_name">
+					</div>
+
+				<label for="text" class="col-md-2 control-label" required="required">Имя </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="name">
+					</div>
+			</div>
+
+			<div class="form-group">
+					<label for="text" class="col-md-2 control-label">Гражданство</label>
+					<div class="col-md-2">
+						<input type="text" class="form-control" name="nationality">
+					</div>
+
+				
+				<label for="text" class="col-md-2 control-label">Место рождения </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="birthplace">
+				</div>
+
+				<label for="text" class="col-md-2 control-label">Дата рождения </label>
+				<div class="input-group date col-md-2" id="datetimepicker2">
+					<input type="text" name="birthday" class="form-control" />
+					<span class="input-group-addon">
+						<span class="glyphicon-calendar glyphicon"></span>
+					</span>
+				</div>
+				</div>
+
+				<hr/>
+
+<h3>Адрес (Регистрация)</h3>
+
+<div class="form-group">
+				<label for="text" class="col-md-2 control-label">Страна </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="country">
+				</div>
+				<label for="text" class="col-md-2 control-label">Край/Область </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="province">
+				</div>
+				<label for="text" class="col-md-2 control-label">Населенный пункт </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="locality">
+				</div>
+</div>
+
+<div class="form-group">
+
+				<label for="text" class="col-sm-offset-4 col-md-2 control-label">Улица/Пер-к </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="street">
+				</div>
+				<label for="text" class="col-md-2 control-label">Дом/Квартира </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="house">
+				</div>
+</div>
+<hr/>
+
+<h3>Место жительства</h3>
+
+<div class="form-group">
+				<label for="text" class="col-md-2 control-label">Страна </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="country1">
+				</div>
+				<label for="text" class="col-md-2 control-label">Край/Область </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="province1">
+				</div>
+				<label for="text" class="col-md-2 control-label">Населенный пункт </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="locality1">
+				</div>
+</div>
+
+<div class="form-group">
+
+				<label for="text" class="col-sm-offset-4 col-md-2 control-label">Улица/Пер-к </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="street1">
+				</div>
+				<label for="text" class="col-md-2 control-label">Дом/Квартира </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="house1">
+				</div>
+</div>
+
+
+<div class="form-group">
+
+				<label for="text" class="col-md-2 control-label" required="required">Контактный тел. </label>
+				<div class="col-md-2">
+						<input type="tel" class="form-control" name="tel">
+				</div>
+				<label for="text" class="col-md-2 control-label" required="required">Эл. Почта </label>
+				<div class="col-md-2">
+						<input type="mail" class="form-control" name="email">
+				</div>
+</div>
+<hr/>
+<h3>Личные данные</h3>
+<div class="form-group">
+
+				<label for="text" class="col-md-1 control-label">Рост, см </label>
+				<div class="col-md-1">
+						<input type="text" class="form-control" name="hgt">
+				</div>
+				<label for="text" class="col-md-1 control-label">Вес, кг </label>
+				<div class="col-md-1">
+						<input type="text" class="form-control" name="wt">
+				</div>
+				<label for="text" class="col-md-2 control-label">Размер одежды </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="clothes">
+				</div>
+				<label for="text" class="col-md-2 control-label">Размер обуви </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="shoes">
+				</div>
+</div>
+<hr/>
+<h3>Морское образование</h3>
+
+
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Учебное заведение </label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="educational" id="educational">
+				</div>
+				<label for="text" class="col-md-1 control-label">Город</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="town">
+				</div>
+				<label for="text" class="col-md-2 control-label">Специальность </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="specialty">
+				</div></div>
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ (раб. / уч. диплом / свидетельство) </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="paper">
+				</div>
+					<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-1">
+						<input type="text" class="form-control" name="number">
+				</div>
+
+					<label for="text" class="col-md-2 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form1" id="show-form">Add +</a></div>
+	</div>
+</div>
+
+<div class="form1 hidden" id="form1">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Учебное заведение </label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="educational1" id="educational">
+				</div>
+				<label for="text" class="col-md-1 control-label">Город</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="town1">
+				</div>
+				<label for="text" class="col-md-2 control-label">Специальность </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="specialty1">
+				</div></div>
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ (раб. / уч. диплом / свидетельство) </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="paper1">
+				</div>
+					<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-1">
+						<input type="text" class="form-control" name="number1">
+				</div>
+
+					<label for="text" class="col-md-2 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue1">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire1">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form2" id="show-form2">Add +</a></div>
+	</div>
+</div>
+</div>
+
+
+
+<div class="form2 hidden" id="form2">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Учебное заведение </label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="educational23" id="educational">
+				</div>
+				<label for="text" class="col-md-1 control-label">Город</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="town23">
+				</div>
+				<label for="text" class="col-md-2 control-label">Специальность </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="specialty23">
+				</div></div>
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ (раб. / уч. диплом / свидетельство) </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="paper23">
+				</div>
+					<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-1">
+						<input type="text" class="form-control" name="number23">
+				</div>
+
+					<label for="text" class="col-md-2 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue23">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire23">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form3" id="show-form3">Add +</a></div>
+	</div>
+</div>
+</div>
+
+
+<div class="form3 hidden" id="form3">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Учебное заведение </label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="educational3" id="educational">
+				</div>
+				<label for="text" class="col-md-1 control-label">Город</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="town3">
+				</div>
+				<label for="text" class="col-md-2 control-label">Специальность </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="specialty3">
+				</div></div>
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ (раб. / уч. диплом / свидетельство) </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="paper3">
+				</div>
+					<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-1">
+						<input type="text" class="form-control" name="number3">
+				</div>
+
+					<label for="text" class="col-md-2 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue3">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire3">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form4" id="show-form4">Add +</a></div>
+	</div>
+</div>
+</div>
+
+
+<div class="form4 hidden" id="form4">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Учебное заведение </label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="educational4" id="educational">
+				</div>
+				<label for="text" class="col-md-1 control-label">Город</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="town4">
+				</div>
+				<label for="text" class="col-md-2 control-label">Специальность </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="specialty4">
+				</div></div>
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ (раб. / уч. диплом / свидетельство) </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="paper4">
+				</div>
+					<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-1">
+						<input type="text" class="form-control" name="number4">
+				</div>
+
+					<label for="text" class="col-md-2 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue4">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire4">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+	</div>
+</div>
+
+<hr/>
+</div>
+
+
+
+<h3>Документы и cправки</h3>
+
+<div class="form5" id="form5">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+					<select class="form-control" name="document5" id="document5">
+						<option value="">---</option>
+						<option value="Гражданский паспорт">Гражданский паспорт</option>
+						<option value="ИНН">ИНН</option>
+						<option value="Снилс">Снилс</option>
+						<option value="УЛМ">УЛМ</option>
+						<option value="Мореходная книжка">Мореходная книжка</option>
+						<option value="Военный билет">Военный билет</option>
+						<option value="Документ об образовании">Документ об образовании</option>
+						<option value="Квалификация по диплому">Квалификация по диплому</option>
+						<option value="Трудовая книжка">Трудовая книжка</option>
+						<option value="Справка о несудимости">Справка о несудимости</option>
+					</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="number5">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="place5">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue5">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire5">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form6" id="show-form6">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+
+<div class="form6 hidden" id="form6">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="document6" id="document">
+						<option value="">---</option>
+						<option value="Гражданский паспорт">Гражданский паспорт</option>
+						<option value="ИНН">ИНН</option>
+						<option value="Снилс">Снилс</option>
+						<option value="УЛМ">УЛМ</option>
+						<option value="Мореходная книжка">Мореходная книжка</option>
+						<option value="Военный билет">Военный билет</option>
+						<option value="Документ об образовании">Документ об образовании</option>
+						<option value="Квалификация по диплому">Квалификация по диплому</option>
+						<option value="Трудовая книжка">Трудовая книжка</option>
+						<option value="Справка о несудимости">Справка о несудимости</option>
+					</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="number6">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="place6">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue6">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire6">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form7" id="show-form7">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+<div class="form7 hidden" id="form7">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+					<select class="form-control" name="document7" id="document">
+						<option value="">---</option>
+						<option value="Гражданский паспорт">Гражданский паспорт</option>
+						<option value="ИНН">ИНН</option>
+						<option value="Снилс">Снилс</option>
+						<option value="УЛМ">УЛМ</option>
+						<option value="Мореходная книжка">Мореходная книжка</option>
+						<option value="Военный билет">Военный билет</option>
+						<option value="Документ об образовании">Документ об образовании</option>
+						<option value="Квалификация по диплому">Квалификация по диплому</option>
+						<option value="Трудовая книжка">Трудовая книжка</option>
+						<option value="Справка о несудимости">Справка о несудимости</option>
+					</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="number7">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="place7">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue7">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire7">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form8" id="show-form8">Add +</a></div>
+	</div>
+</div>
+
+<hr/>
+</div>
+
+
+<div class="form8 hidden" id="form8">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+					<select class="form-control" name="document8" id="document">
+						<option value="">---</option>
+						<option value="Гражданский паспорт">Гражданский паспорт</option>
+						<option value="ИНН">ИНН</option>
+						<option value="Снилс">Снилс</option>
+						<option value="УЛМ">УЛМ</option>
+						<option value="Мореходная книжка">Мореходная книжка</option>
+						<option value="Военный билет">Военный билет</option>
+						<option value="Документ об образовании">Документ об образовании</option>
+						<option value="Квалификация по диплому">Квалификация по диплому</option>
+						<option value="Трудовая книжка">Трудовая книжка</option>
+						<option value="Справка о несудимости">Справка о несудимости</option>
+					</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="number8">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="place8">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue8">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire8">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form9" id="show-form9">Add +</a></div>
+	</div>
+</div>
+
+<hr/>
+</div>
+
+
+<div class="form9 hidden" id="form9">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+					<select class="form-control" name="document9" id="document">
+						<option value="">---</option>
+						<option value="Гражданский паспорт">Гражданский паспорт</option>
+						<option value="ИНН">ИНН</option>
+						<option value="Снилс">Снилс</option>
+						<option value="УЛМ">УЛМ</option>
+						<option value="Мореходная книжка">Мореходная книжка</option>
+						<option value="Военный билет">Военный билет</option>
+						<option value="Документ об образовании">Документ об образовании</option>
+						<option value="Квалификация по диплому">Квалификация по диплому</option>
+						<option value="Трудовая книжка">Трудовая книжка</option>
+						<option value="Справка о несудимости">Справка о несудимости</option>
+					</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="number9">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="place9">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue9">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire9">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form10" id="show-form10">Add +</a></div>
+	</div>
+</div>
+
+<hr/>
+</div>
+
+
+<div class="form10 hidden" id="form10">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+					<select class="form-control" name="document10" id="document">
+						<option value="">---</option>
+						<option value="Гражданский паспорт">Гражданский паспорт</option>
+						<option value="ИНН">ИНН</option>
+						<option value="Снилс">Снилс</option>
+						<option value="УЛМ">УЛМ</option>
+						<option value="Мореходная книжка">Мореходная книжка</option>
+						<option value="Военный билет">Военный билет</option>
+						<option value="Документ об образовании">Документ об образовании</option>
+						<option value="Квалификация по диплому">Квалификация по диплому</option>
+						<option value="Трудовая книжка">Трудовая книжка</option>
+						<option value="Справка о несудимости">Справка о несудимости</option>
+					</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="number10">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="place10">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue10">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire10">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form11" id="show-form11">Add +</a></div>
+	</div>
+</div>
+
+<hr/>
+</div>
+
+
+<div class="form11 hidden" id="form11">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+					<select class="form-control" name="document11" id="document">
+						<option value="">---</option>
+						<option value="Гражданский паспорт">Гражданский паспорт</option>
+						<option value="ИНН">ИНН</option>
+						<option value="Снилс">Снилс</option>
+						<option value="УЛМ">УЛМ</option>
+						<option value="Мореходная книжка">Мореходная книжка</option>
+						<option value="Военный билет">Военный билет</option>
+						<option value="Документ об образовании">Документ об образовании</option>
+						<option value="Квалификация по диплому">Квалификация по диплому</option>
+						<option value="Трудовая книжка">Трудовая книжка</option>
+						<option value="Справка о несудимости">Справка о несудимости</option>
+					</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="number11">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="place11">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue11">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire11">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form12" id="show-form12">Add +</a></div>
+	</div>
+</div>
+
+<hr/>
+</div>
+
+<div class="form12 hidden" id="form12">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+					<select class="form-control" name="document12" id="document">
+						<option value="">---</option>
+						<option value="Гражданский паспорт">Гражданский паспорт</option>
+						<option value="ИНН">ИНН</option>
+						<option value="Снилс">Снилс</option>
+						<option value="УЛМ">УЛМ</option>
+						<option value="Мореходная книжка">Мореходная книжка</option>
+						<option value="Военный билет">Военный билет</option>
+						<option value="Документ об образовании">Документ об образовании</option>
+						<option value="Квалификация по диплому">Квалификация по диплому</option>
+						<option value="Трудовая книжка">Трудовая книжка</option>
+						<option value="Справка о несудимости">Справка о несудимости</option>
+					</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="number12">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="place12">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue12">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire12">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form13" id="show-form13">Add +</a></div>
+	</div>
+</div>
+
+<hr/>
+</div>
+
+
+<div class="form13 hidden" id="form13">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+					<select class="form-control" name="document13" id="document">
+						<option value="">---</option>
+						<option value="Гражданский паспорт">Гражданский паспорт</option>
+						<option value="ИНН">ИНН</option>
+						<option value="Снилс">Снилс</option>
+						<option value="УЛМ">УЛМ</option>
+						<option value="Мореходная книжка">Мореходная книжка</option>
+						<option value="Военный билет">Военный билет</option>
+						<option value="Документ об образовании">Документ об образовании</option>
+						<option value="Квалификация по диплому">Квалификация по диплому</option>
+						<option value="Трудовая книжка">Трудовая книжка</option>
+						<option value="Справка о несудимости">Справка о несудимости</option>
+					</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="number13">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="place13">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue13">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire13">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#form14" id="show-form14">Add +</a></div>
+	</div>
+</div>
+
+<hr/>
+</div>
+
+
+<div class="form14 hidden" id="form14">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+					<select class="form-control" name="document14" id="document">
+						<option value="">---</option>
+						<option value="Гражданский паспорт">Гражданский паспорт</option>
+						<option value="ИНН">ИНН</option>
+						<option value="Снилс">Снилс</option>
+						<option value="УЛМ">УЛМ</option>
+						<option value="Мореходная книжка">Мореходная книжка</option>
+						<option value="Военный билет">Военный билет</option>
+						<option value="Документ об образовании">Документ об образовании</option>
+						<option value="Квалификация по диплому">Квалификация по диплому</option>
+						<option value="Трудовая книжка">Трудовая книжка</option>
+						<option value="Справка о несудимости">Справка о несудимости</option>
+					</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="number14">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="place14">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="issue14">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="expire14">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				
+	</div>
+</div>
+
+<hr/>
+</div>
+
+
+<h3>Свидетельства и сертификаты</h3>
+
+<div class="svidetelstvo" id="svidetelstvo">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="sertifikat" id="document">
+					<option value="">---</option>
+					<option value="Танкерное подтверждение к диплому (Управление)">Танкерное подтверждение к диплому (Управление)</option>
+					<option value="Танкерное подтверждение к диплому (Эксплуатация)">Танкерное подтверждение к диплому (Эксплуатация)</option>
+					<option value="Начальная танкерная подготовка">Начальная танкерная подготовка</option>
+					<option value="Расширенная танкерная подготовка">Расширенная танкерная подготовка</option>
+					<option value="Начальная подготовка на танкерах-химовозах">Начальная подготовка на танкерах-химовозах</option>
+					<option value="Расширенная на танкерах-химовозах подготовка">Расширенная на танкерах-химовозах подготовка</option>
+					<option value="НБЖС (Борьба за живучесть судна)">НБЖС (Борьба за живучесть судна)</option>
+					<option value="Подготовка плоты и шлюпки">Подготовка плоты и шлюпки</option>
+					<option value="Расширенная подготовка по борьбе с пожаром">Расширенная подготовка по борьбе с пожаром</option>
+					<option value="Подготовка по оказанию первой медицинской помощи и медицинский уход">Подготовка по оказанию первой медицинской помощи и медицинский уход</option>
+					<option value="Подготовка по оказанию первой медицинской помощи">Подготовка по оказанию первой медицинской помощи</option>
+					<option value="Обучение офицера по охране судна">Обучение офицера по охране судна</option>
+					<option value="Подготовка моряков, имеющих назначенные обязанности по охране">Подготовка моряков, имеющих назначенные обязанности по охране</option>
+					<option value="Диплом оператора ГМССБ">Диплом оператора ГМССБ</option>
+					<option value="Оператор ограниченного района ГМССБ">Оператор ограниченного района ГМССБ</option>
+					<option value="Организация ходовой навигационной вахты">Организация ходовой навигационной вахты</option>
+					<option value="Использование радиолокационной станции">Использование радиолокационной станции</option>
+					<option value="Использование системы автоматической радиолокационной прокладки (САРП)">Использование системы автоматической радиолокационной прокладки (САРП)</option>
+					<option value="Использование электронной картографической системы (ЭКНИС)">Использование электронной картографической системы (ЭКНИС)</option>
+					<option value="Обучение по транспортной безопасности">Обучение по транспортной безопасности</option>
+					<option value="Техника безопасности">Техника безопасности</option>
+					<option value="Перевозка опасных веществ на судах (навалом и в упаковке)">Перевозка опасных веществ на судах (навалом и в упаковке)</option>
+					<option value="Маневрирование и управление судном">Маневрирование и управление судном</option>
+					<option value="Использование дыхательных аппаратов (АСВ-2)">Использование дыхательных аппаратов (АСВ-2)</option>
+					<option value="Охрана судов и портовых средств (ОСПС)">Охрана судов и портовых средств (ОСПС)</option>
+					<option value="Руководящие принципы судовых поваров (МОТ)">Руководящие принципы судовых поваров (МОТ)</option>
+					<option value="Свидетельство газоанализаторщика">Свидетельство газоанализаторщика</option>
+					<option value="Свидетельство оператора судовых крановых установок">Свидетельство оператора судовых крановых установок</option>
+				</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-number">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-place">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-issue">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-expire">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#svidetelstvo2" id="show-form16">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+
+<div class="svidetelstvo2 hidden" id="svidetelstvo2">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="sertifikat2" id="document">
+					<option value="">---</option>
+					<option value="Танкерное подтверждение к диплому (Управление)">Танкерное подтверждение к диплому (Управление)</option>
+					<option value="Танкерное подтверждение к диплому (Эксплуатация)">Танкерное подтверждение к диплому (Эксплуатация)</option>
+					<option value="Начальная танкерная подготовка">Начальная танкерная подготовка</option>
+					<option value="Расширенная танкерная подготовка">Расширенная танкерная подготовка</option>
+					<option value="Начальная подготовка на танкерах-химовозах">Начальная подготовка на танкерах-химовозах</option>
+					<option value="Расширенная на танкерах-химовозах подготовка">Расширенная на танкерах-химовозах подготовка</option>
+					<option value="НБЖС (Борьба за живучесть судна)">НБЖС (Борьба за живучесть судна)</option>
+					<option value="Подготовка плоты и шлюпки">Подготовка плоты и шлюпки</option>
+					<option value="Расширенная подготовка по борьбе с пожаром">Расширенная подготовка по борьбе с пожаром</option>
+					<option value="Подготовка по оказанию первой медицинской помощи и медицинский уход">Подготовка по оказанию первой медицинской помощи и медицинский уход</option>
+					<option value="Подготовка по оказанию первой медицинской помощи">Подготовка по оказанию первой медицинской помощи</option>
+					<option value="Обучение офицера по охране судна">Обучение офицера по охране судна</option>
+					<option value="Подготовка моряков, имеющих назначенные обязанности по охране">Подготовка моряков, имеющих назначенные обязанности по охране</option>
+					<option value="Диплом оператора ГМССБ">Диплом оператора ГМССБ</option>
+					<option value="Оператор ограниченного района ГМССБ">Оператор ограниченного района ГМССБ</option>
+					<option value="Организация ходовой навигационной вахты">Организация ходовой навигационной вахты</option>
+					<option value="Использование радиолокационной станции">Использование радиолокационной станции</option>
+					<option value="Использование системы автоматической радиолокационной прокладки (САРП)">Использование системы автоматической радиолокационной прокладки (САРП)</option>
+					<option value="Использование электронной картографической системы (ЭКНИС)">Использование электронной картографической системы (ЭКНИС)</option>
+					<option value="Обучение по транспортной безопасности">Обучение по транспортной безопасности</option>
+					<option value="Техника безопасности">Техника безопасности</option>
+					<option value="Перевозка опасных веществ на судах (навалом и в упаковке)">Перевозка опасных веществ на судах (навалом и в упаковке)</option>
+					<option value="Маневрирование и управление судном">Маневрирование и управление судном</option>
+					<option value="Использование дыхательных аппаратов (АСВ-2)">Использование дыхательных аппаратов (АСВ-2)</option>
+					<option value="Охрана судов и портовых средств (ОСПС)">Охрана судов и портовых средств (ОСПС)</option>
+					<option value="Руководящие принципы судовых поваров (МОТ)">Руководящие принципы судовых поваров (МОТ)</option>
+					<option value="Свидетельство газоанализаторщика">Свидетельство газоанализаторщика</option>
+					<option value="Свидетельство оператора судовых крановых установок">Свидетельство оператора судовых крановых установок</option>
+				</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-number2">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-place2">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-issue2">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-expire2">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#svidetelstvo3" id="show-form17">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+
+<div class="svidetelstvo3 hidden" id="svidetelstvo3">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="sertifikat3" id="document">
+					<option value="">---</option>
+					<option value="Танкерное подтверждение к диплому (Управление)">Танкерное подтверждение к диплому (Управление)</option>
+					<option value="Танкерное подтверждение к диплому (Эксплуатация)">Танкерное подтверждение к диплому (Эксплуатация)</option>
+					<option value="Начальная танкерная подготовка">Начальная танкерная подготовка</option>
+					<option value="Расширенная танкерная подготовка">Расширенная танкерная подготовка</option>
+					<option value="Начальная подготовка на танкерах-химовозах">Начальная подготовка на танкерах-химовозах</option>
+					<option value="Расширенная на танкерах-химовозах подготовка">Расширенная на танкерах-химовозах подготовка</option>
+					<option value="НБЖС (Борьба за живучесть судна)">НБЖС (Борьба за живучесть судна)</option>
+					<option value="Подготовка плоты и шлюпки">Подготовка плоты и шлюпки</option>
+					<option value="Расширенная подготовка по борьбе с пожаром">Расширенная подготовка по борьбе с пожаром</option>
+					<option value="Подготовка по оказанию первой медицинской помощи и медицинский уход">Подготовка по оказанию первой медицинской помощи и медицинский уход</option>
+					<option value="Подготовка по оказанию первой медицинской помощи">Подготовка по оказанию первой медицинской помощи</option>
+					<option value="Обучение офицера по охране судна">Обучение офицера по охране судна</option>
+					<option value="Подготовка моряков, имеющих назначенные обязанности по охране">Подготовка моряков, имеющих назначенные обязанности по охране</option>
+					<option value="Диплом оператора ГМССБ">Диплом оператора ГМССБ</option>
+					<option value="Оператор ограниченного района ГМССБ">Оператор ограниченного района ГМССБ</option>
+					<option value="Организация ходовой навигационной вахты">Организация ходовой навигационной вахты</option>
+					<option value="Использование радиолокационной станции">Использование радиолокационной станции</option>
+					<option value="Использование системы автоматической радиолокационной прокладки (САРП)">Использование системы автоматической радиолокационной прокладки (САРП)</option>
+					<option value="Использование электронной картографической системы (ЭКНИС)">Использование электронной картографической системы (ЭКНИС)</option>
+					<option value="Обучение по транспортной безопасности">Обучение по транспортной безопасности</option>
+					<option value="Техника безопасности">Техника безопасности</option>
+					<option value="Перевозка опасных веществ на судах (навалом и в упаковке)">Перевозка опасных веществ на судах (навалом и в упаковке)</option>
+					<option value="Маневрирование и управление судном">Маневрирование и управление судном</option>
+					<option value="Использование дыхательных аппаратов (АСВ-2)">Использование дыхательных аппаратов (АСВ-2)</option>
+					<option value="Охрана судов и портовых средств (ОСПС)">Охрана судов и портовых средств (ОСПС)</option>
+					<option value="Руководящие принципы судовых поваров (МОТ)">Руководящие принципы судовых поваров (МОТ)</option>
+					<option value="Свидетельство газоанализаторщика">Свидетельство газоанализаторщика</option>
+					<option value="Свидетельство оператора судовых крановых установок">Свидетельство оператора судовых крановых установок</option>
+				</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-number3">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-place3">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-issue3">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-expire3">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#svidetelstvo4" id="show-form18">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+
+<div class="svidetelstvo4 hidden" id="svidetelstvo4">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="sertifikat4" id="document">
+					<option value="">---</option>
+					<option value="Танкерное подтверждение к диплому (Управление)">Танкерное подтверждение к диплому (Управление)</option>
+					<option value="Танкерное подтверждение к диплому (Эксплуатация)">Танкерное подтверждение к диплому (Эксплуатация)</option>
+					<option value="Начальная танкерная подготовка">Начальная танкерная подготовка</option>
+					<option value="Расширенная танкерная подготовка">Расширенная танкерная подготовка</option>
+					<option value="Начальная подготовка на танкерах-химовозах">Начальная подготовка на танкерах-химовозах</option>
+					<option value="Расширенная на танкерах-химовозах подготовка">Расширенная на танкерах-химовозах подготовка</option>
+					<option value="НБЖС (Борьба за живучесть судна)">НБЖС (Борьба за живучесть судна)</option>
+					<option value="Подготовка плоты и шлюпки">Подготовка плоты и шлюпки</option>
+					<option value="Расширенная подготовка по борьбе с пожаром">Расширенная подготовка по борьбе с пожаром</option>
+					<option value="Подготовка по оказанию первой медицинской помощи и медицинский уход">Подготовка по оказанию первой медицинской помощи и медицинский уход</option>
+					<option value="Подготовка по оказанию первой медицинской помощи">Подготовка по оказанию первой медицинской помощи</option>
+					<option value="Обучение офицера по охране судна">Обучение офицера по охране судна</option>
+					<option value="Подготовка моряков, имеющих назначенные обязанности по охране">Подготовка моряков, имеющих назначенные обязанности по охране</option>
+					<option value="Диплом оператора ГМССБ">Диплом оператора ГМССБ</option>
+					<option value="Оператор ограниченного района ГМССБ">Оператор ограниченного района ГМССБ</option>
+					<option value="Организация ходовой навигационной вахты">Организация ходовой навигационной вахты</option>
+					<option value="Использование радиолокационной станции">Использование радиолокационной станции</option>
+					<option value="Использование системы автоматической радиолокационной прокладки (САРП)">Использование системы автоматической радиолокационной прокладки (САРП)</option>
+					<option value="Использование электронной картографической системы (ЭКНИС)">Использование электронной картографической системы (ЭКНИС)</option>
+					<option value="Обучение по транспортной безопасности">Обучение по транспортной безопасности</option>
+					<option value="Техника безопасности">Техника безопасности</option>
+					<option value="Перевозка опасных веществ на судах (навалом и в упаковке)">Перевозка опасных веществ на судах (навалом и в упаковке)</option>
+					<option value="Маневрирование и управление судном">Маневрирование и управление судном</option>
+					<option value="Использование дыхательных аппаратов (АСВ-2)">Использование дыхательных аппаратов (АСВ-2)</option>
+					<option value="Охрана судов и портовых средств (ОСПС)">Охрана судов и портовых средств (ОСПС)</option>
+					<option value="Руководящие принципы судовых поваров (МОТ)">Руководящие принципы судовых поваров (МОТ)</option>
+					<option value="Свидетельство газоанализаторщика">Свидетельство газоанализаторщика</option>
+					<option value="Свидетельство оператора судовых крановых установок">Свидетельство оператора судовых крановых установок</option>
+				</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-number4">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-place4">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-issue4">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-expire4">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#svidetelstvo5" id="show-form19">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+
+<div class="svidetelstvo5 hidden" id="svidetelstvo5">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="sertifikat5" id="document">
+					<option value="">---</option>
+					<option value="Танкерное подтверждение к диплому (Управление)">Танкерное подтверждение к диплому (Управление)</option>
+					<option value="Танкерное подтверждение к диплому (Эксплуатация)">Танкерное подтверждение к диплому (Эксплуатация)</option>
+					<option value="Начальная танкерная подготовка">Начальная танкерная подготовка</option>
+					<option value="Расширенная танкерная подготовка">Расширенная танкерная подготовка</option>
+					<option value="Начальная подготовка на танкерах-химовозах">Начальная подготовка на танкерах-химовозах</option>
+					<option value="Расширенная на танкерах-химовозах подготовка">Расширенная на танкерах-химовозах подготовка</option>
+					<option value="НБЖС (Борьба за живучесть судна)">НБЖС (Борьба за живучесть судна)</option>
+					<option value="Подготовка плоты и шлюпки">Подготовка плоты и шлюпки</option>
+					<option value="Расширенная подготовка по борьбе с пожаром">Расширенная подготовка по борьбе с пожаром</option>
+					<option value="Подготовка по оказанию первой медицинской помощи и медицинский уход">Подготовка по оказанию первой медицинской помощи и медицинский уход</option>
+					<option value="Подготовка по оказанию первой медицинской помощи">Подготовка по оказанию первой медицинской помощи</option>
+					<option value="Обучение офицера по охране судна">Обучение офицера по охране судна</option>
+					<option value="Подготовка моряков, имеющих назначенные обязанности по охране">Подготовка моряков, имеющих назначенные обязанности по охране</option>
+					<option value="Диплом оператора ГМССБ">Диплом оператора ГМССБ</option>
+					<option value="Оператор ограниченного района ГМССБ">Оператор ограниченного района ГМССБ</option>
+					<option value="Организация ходовой навигационной вахты">Организация ходовой навигационной вахты</option>
+					<option value="Использование радиолокационной станции">Использование радиолокационной станции</option>
+					<option value="Использование системы автоматической радиолокационной прокладки (САРП)">Использование системы автоматической радиолокационной прокладки (САРП)</option>
+					<option value="Использование электронной картографической системы (ЭКНИС)">Использование электронной картографической системы (ЭКНИС)</option>
+					<option value="Обучение по транспортной безопасности">Обучение по транспортной безопасности</option>
+					<option value="Техника безопасности">Техника безопасности</option>
+					<option value="Перевозка опасных веществ на судах (навалом и в упаковке)">Перевозка опасных веществ на судах (навалом и в упаковке)</option>
+					<option value="Маневрирование и управление судном">Маневрирование и управление судном</option>
+					<option value="Использование дыхательных аппаратов (АСВ-2)">Использование дыхательных аппаратов (АСВ-2)</option>
+					<option value="Охрана судов и портовых средств (ОСПС)">Охрана судов и портовых средств (ОСПС)</option>
+					<option value="Руководящие принципы судовых поваров (МОТ)">Руководящие принципы судовых поваров (МОТ)</option>
+					<option value="Свидетельство газоанализаторщика">Свидетельство газоанализаторщика</option>
+					<option value="Свидетельство оператора судовых крановых установок">Свидетельство оператора судовых крановых установок</option>
+				</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-number5">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-place5">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-issue5">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="form-expire5">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#spravka" id="show-form">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+
+
+<h3>Мед.заключения и справки</h3>
+
+<div class="spravka" id="spravka">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="spravka" id="document">
+					<option value="">---</option>
+					<option value="Мед. Книжка с пройденной комиссий ">Мед. Книжка с пройденной комиссий </option>
+					<option value="Международный медицинский сертификат">Международный медицинский сертификат</option>
+					<option value="Тест на алкоголь и наркотики">Тест на алкоголь и наркотики</option>
+					<option value="Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)">Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)</option>
+					<option value="Мед. Сертификат «Physical examination»">Мед. Сертификат «Physical examination»</option>
+					<option value="Прививка от дифтерии">Прививка от дифтерии</option>
+				</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-number">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-place">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-issue">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-expire">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#spravka2" id="show-form20">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+<div class="spravka2 hidden" id="spravka2">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="spravka2" id="document">
+					<option value="">---</option>
+					<option value="Мед. Книжка с пройденной комиссий ">Мед. Книжка с пройденной комиссий </option>
+					<option value="Международный медицинский сертификат">Международный медицинский сертификат</option>
+					<option value="Тест на алкоголь и наркотики">Тест на алкоголь и наркотики</option>
+					<option value="Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)">Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)</option>
+					<option value="Мед. Сертификат «Physical examination»">Мед. Сертификат «Physical examination»</option>
+					<option value="Прививка от дифтерии">Прививка от дифтерии</option>
+				</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-number2">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-place2">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-issue2">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-expire2">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#spravka3" id="show-form21">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+
+<div class="spravka3 hidden" id="spravka3">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="spravka3" id="document">
+					<option value="">---</option>
+					<option value="Мед. Книжка с пройденной комиссий ">Мед. Книжка с пройденной комиссий </option>
+					<option value="Международный медицинский сертификат">Международный медицинский сертификат</option>
+					<option value="Тест на алкоголь и наркотики">Тест на алкоголь и наркотики</option>
+					<option value="Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)">Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)</option>
+					<option value="Мед. Сертификат «Physical examination»">Мед. Сертификат «Physical examination»</option>
+					<option value="Прививка от дифтерии">Прививка от дифтерии</option>
+				</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-number3">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-place3">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-issue3">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-expire3">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#spravka4" id="show-form22">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+
+<div class="spravka4 hidden" id="spravka4">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="spravka4" id="document">
+					<option value="">---</option>
+					<option value="Мед. Книжка с пройденной комиссий ">Мед. Книжка с пройденной комиссий </option>
+					<option value="Международный медицинский сертификат">Международный медицинский сертификат</option>
+					<option value="Тест на алкоголь и наркотики">Тест на алкоголь и наркотики</option>
+					<option value="Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)">Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)</option>
+					<option value="Мед. Сертификат «Physical examination»">Мед. Сертификат «Physical examination»</option>
+					<option value="Прививка от дифтерии">Прививка от дифтерии</option>
+				</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-number4">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-place4">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-issue4">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-expire4">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#spravka5" id="show-form23">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+
+<div class="spravka5 hidden" id="spravka5">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="spravka5" id="document">
+					<option value="">---</option>
+					<option value="Мед. Книжка с пройденной комиссий ">Мед. Книжка с пройденной комиссий </option>
+					<option value="Международный медицинский сертификат">Международный медицинский сертификат</option>
+					<option value="Тест на алкоголь и наркотики">Тест на алкоголь и наркотики</option>
+					<option value="Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)">Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)</option>
+					<option value="Мед. Сертификат «Physical examination»">Мед. Сертификат «Physical examination»</option>
+					<option value="Прививка от дифтерии">Прививка от дифтерии</option>
+				</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-number5">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-place5">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-issue5">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-expire5">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div><div class="col-md-1"><a href="#spravka6" id="show-form24">Add +</a></div>
+	</div>
+</div>
+
+</div>
+
+
+<div class="spravka6 hidden" id="spravka6">
+<div class="form-group">
+				<label for="text" class="col-md-1 control-label">Документ</label>
+				<div class="col-md-4">
+				<select class="form-control" name="spravka3" id="document">
+					<option value="">---</option>
+					<option value="Мед. Книжка с пройденной комиссий ">Мед. Книжка с пройденной комиссий </option>
+					<option value="Международный медицинский сертификат">Международный медицинский сертификат</option>
+					<option value="Тест на алкоголь и наркотики">Тест на алкоголь и наркотики</option>
+					<option value="Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)">Вакцинация против желтой лихорадки/Гепатита Б (18-55 лет)</option>
+					<option value="Мед. Сертификат «Physical examination»">Мед. Сертификат «Physical examination»</option>
+					<option value="Прививка от дифтерии">Прививка от дифтерии</option>
+				</select>
+				</div>
+				</div>
+<div class="form-group">
+				
+				<label for="text" class="col-md-1 control-label">Номер </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-number6">
+				</div>
+
+				<label for="text" class="col-md-1 control-label">Место выдачи</label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-place6">
+				</div>
+
+					<label for="text" class="col-md-1 control-label">Дата выдачи </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-issue6">
+				</div>
+								
+					<label for="text" class="col-md-1 control-label">Истекает </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="spravka-expire6">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				
+	</div>
+</div>
+
+</div>
+
+
+
+
+
+
+<h3>Опыт работы</h3>
+
+
+
+<div class="experience" id="experience">
+<div class="form-group">
+				<label for="text" class="col-md-2 control-label">Месяц, год поступления</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date" id="experience-date">
+				</div>
+				<label for="text" class="col-md-2 control-label">Месяц, год списания</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date2" id="experience-date2">
+				</div>
+				<label for="text" class="col-md-2 control-label">Должность</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="post" id="post">
+				</div>
+</div>		
+<div class="form-group">				
+				<label for="text" class="col-md-2 control-label">Тип судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="ship" id="ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Название судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="name-ship" id="name-ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Судовладелец</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="shipowner" id="shipowner">
+				</div>
+</div>		
+<div class="form-group">
+				
+				<label for="text" class="col-md-2 control-label">Водоизмещение </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="Vodoizmeshcheniye">
+				</div>
+				<label for="text" class="col-md-2 control-label">Тип главного двигателя</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="engine" id="engine">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#experience2" id="experience-form2">Add +</a></div>
+	</div>
+</div>
+</div>
+
+
+<div class="experience2 hidden" id="experience2">
+<div class="form-group">
+				<label for="text" class="col-md-2 control-label">Месяц, год поступления</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date2" id="experience-date">
+				</div>
+				<label for="text" class="col-md-2 control-label">Месяц, год списания</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date22" id="experience-date2">
+				</div>
+				<label for="text" class="col-md-2 control-label">Должность</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="post2" id="post">
+				</div>
+</div>		
+<div class="form-group">				
+				<label for="text" class="col-md-2 control-label">Тип судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="ship2" id="ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Название судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="name-ship2" id="name-ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Судовладелец</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="shipowner2" id="shipowner">
+				</div>
+</div>		
+<div class="form-group">
+				
+				<label for="text" class="col-md-2 control-label">Водоизмещение </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="Vodoizmeshcheniye2">
+				</div>
+				<label for="text" class="col-md-2 control-label">Тип главного двигателя</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="engine2" id="engine">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#experience3" id="experience-form3">Add +</a></div>
+	</div>
+</div>
+</div>
+
+
+
+<div class="experience3 hidden" id="experience3">
+<div class="form-group">
+				<label for="text" class="col-md-2 control-label">Месяц, год поступления</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date3" id="experience-date">
+				</div>
+				<label for="text" class="col-md-2 control-label">Месяц, год списания</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date23" id="experience-date2">
+				</div>
+				<label for="text" class="col-md-2 control-label">Должность</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="post3" id="post">
+				</div>
+</div>		
+<div class="form-group">				
+				<label for="text" class="col-md-2 control-label">Тип судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="ship3" id="ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Название судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="name-ship3" id="name-ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Судовладелец</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="shipowner3" id="shipowner">
+				</div>
+</div>		
+<div class="form-group">
+				
+				<label for="text" class="col-md-2 control-label">Водоизмещение </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="Vodoizmeshcheniye3">
+				</div>
+				<label for="text" class="col-md-2 control-label">Тип главного двигателя</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="engine" id="engine3">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#experience4" id="experience-form4">Add +</a></div>
+	</div>
+</div>
+</div>
+
+<div class="experience4 hidden" id="experience4">
+<div class="form-group">
+				<label for="text" class="col-md-2 control-label">Месяц, год поступления</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date4" id="experience-date">
+				</div>
+				<label for="text" class="col-md-2 control-label">Месяц, год списания</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date24" id="experience-date2">
+				</div>
+				<label for="text" class="col-md-2 control-label">Должность</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="post4" id="post">
+				</div>
+</div>		
+<div class="form-group">				
+				<label for="text" class="col-md-2 control-label">Тип судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="ship4" id="ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Название судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="name-ship4" id="name-ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Судовладелец</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="shipowner4" id="shipowner">
+				</div>
+</div>		
+<div class="form-group">
+				
+				<label for="text" class="col-md-2 control-label">Водоизмещение </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="Vodoizmeshcheniye4">
+				</div>
+				<label for="text" class="col-md-2 control-label">Тип главного двигателя</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="engine" id="engine4">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#experience5" id="experience-form5">Add +</a></div>
+	</div>
+</div>
+</div>
+
+<div class="experience5 hidden" id="experience5">
+<div class="form-group">
+				<label for="text" class="col-md-2 control-label">Месяц, год поступления</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date5" id="experience-date">
+				</div>
+				<label for="text" class="col-md-2 control-label">Месяц, год списания</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date25" id="experience-date2">
+				</div>
+				<label for="text" class="col-md-2 control-label">Должность</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="post5" id="post">
+				</div>
+</div>		
+<div class="form-group">				
+				<label for="text" class="col-md-2 control-label">Тип судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="ship5" id="ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Название судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="name-ship5" id="name-ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Судовладелец</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="shipowner5" id="shipowner">
+				</div>
+</div>		
+<div class="form-group">
+				
+				<label for="text" class="col-md-2 control-label">Водоизмещение </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="Vodoizmeshcheniye5">
+				</div>
+				<label for="text" class="col-md-2 control-label">Тип главного двигателя</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="engine" id="engine5">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+				<div class="col-md-1"><a href="#experience6" id="experience-form6">Add +</a></div>
+	</div>
+</div>
+</div>
+
+<div class="experience6 hidden" id="experience6">
+<div class="form-group">
+				<label for="text" class="col-md-2 control-label">Месяц, год поступления</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date6" id="experience-date">
+				</div>
+				<label for="text" class="col-md-2 control-label">Месяц, год списания</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="experience-date26" id="experience-date2">
+				</div>
+				<label for="text" class="col-md-2 control-label">Должность</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="post6" id="post">
+				</div>
+</div>		
+<div class="form-group">				
+				<label for="text" class="col-md-2 control-label">Тип судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="ship6" id="ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Название судна</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="name-ship6" id="name-ship">
+				</div>
+				<label for="text" class="col-md-2 control-label">Судовладелец</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="shipowner6" id="shipowner">
+				</div>
+</div>		
+<div class="form-group">
+				
+				<label for="text" class="col-md-2 control-label">Водоизмещение </label>
+				<div class="col-md-2">
+						<input type="text" class="form-control" name="Vodoizmeshcheniye6">
+				</div>
+				<label for="text" class="col-md-2 control-label">Тип главного двигателя</label>
+				<div class="col-md-2">
+					<input type="text" class="form-control" name="engine" id="engine6">
+				</div>
+				
+</div>
+<div class="container">
+	<div class="row">
+				<div class="col-md-11">
+					<p></p>
+				</div>
+	</div>
+</div>
+</div>
+
+<label class="checkbox-inline">
+ <input type="checkbox" id="inlineCheckbox1" value="option1" required="required"> В соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» я подтверждаю свое согласие на осуществление со всеми персональными данными, указанными мной в настоящей анкете, а также в предоставленных мной документах следующих действий: сбор, систематизацию, накопление, хранение, обновление, изменение, использование, обезличивание, блокирование, уничтожение, обработку моих персональных данных посредством внесения их в электронную базу данных, включения в списки (реестры) и отчетные формы, предусмотренные документами, регламентирующими предоставление отчетных данных (документов), и передачу их уполномоченным органам.
+</label>
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#show-form').click(function () {
+                $("#form1").removeClass('hidden');
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('#show-form').click(function () {
+                $("#form1").removeClass('hidden');
+            });
+        });
+    </script>
+
+        <script>
+        $(document).ready(function() {
+            $('#show-form2').click(function () {
+                $("#form2").removeClass('hidden');
+            });
+        });
+    </script>
+
+        <script>
+        $(document).ready(function() {
+            $('#show-form3').click(function () {
+                $("#form3").removeClass('hidden');
+            });
+        });
+    </script>
+
+        <script>
+        $(document).ready(function() {
+            $('#show-form4').click(function () {
+                $("#form4").removeClass('hidden');
+            });
+        });
+    </script>
+
+        <script>
+        $(document).ready(function() {
+            $('#show-form6').click(function () {
+                $("#form6").removeClass('hidden');
+            });
+        });
+    </script>
+        <script>
+        $(document).ready(function() {
+            $('#show-form7').click(function () {
+                $("#form7").removeClass('hidden');
+            });
+        });
+    </script>
+        <script>
+        $(document).ready(function() {
+            $('#show-form8').click(function () {
+                $("#form8").removeClass('hidden');
+            });
+        });
+    </script>
+            <script>
+        $(document).ready(function() {
+            $('#show-form9').click(function () {
+                $("#form9").removeClass('hidden');
+            });
+        });
+    </script>
+            <script>
+        $(document).ready(function() {
+            $('#show-form10').click(function () {
+                $("#form10").removeClass('hidden');
+            });
+        });
+    </script>
+            <script>
+        $(document).ready(function() {
+            $('#show-form11').click(function () {
+                $("#form11").removeClass('hidden');
+            });
+        });
+    </script>
+            <script>
+        $(document).ready(function() {
+            $('#show-form12').click(function () {
+                $("#form12").removeClass('hidden');
+            });
+        });
+    </script>
+            <script>
+        $(document).ready(function() {
+            $('#show-form13').click(function () {
+                $("#form13").removeClass('hidden');
+            });
+        });
+    </script>
+            <script>
+        $(document).ready(function() {
+            $('#show-form14').click(function () {
+                $("#form14").removeClass('hidden');
+            });
+        });
+    </script>
+
+<script>
+        $(document).ready(function() {
+            $('#show-form16').click(function () {
+                $("#svidetelstvo2").removeClass('hidden');
+            });
+        });
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('#show-form17').click(function () {
+                $("#svidetelstvo3").removeClass('hidden');
+            });
+        });
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('#show-form18').click(function () {
+                $("#svidetelstvo4").removeClass('hidden');
+            });
+        });
+</script>
+
+
+<script>
+        $(document).ready(function() {
+            $('#show-form19').click(function () {
+                $("#svidetelstvo5").removeClass('hidden');
+            });
+        });
+</script>
+
+
+<script>
+        $(document).ready(function() {
+            $('#show-form20').click(function () {
+                $("#spravka2").removeClass('hidden');
+            });
+        });
+</script>
+
+
+<script>
+        $(document).ready(function() {
+            $('#show-form21').click(function () {
+                $("#spravka3").removeClass('hidden');
+            });
+        });
+</script>
+
+
+<script>
+        $(document).ready(function() {
+            $('#show-form22').click(function () {
+                $("#spravka4").removeClass('hidden');
+            });
+        });
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('#show-form23').click(function () {
+                $("#spravka5").removeClass('hidden');
+            });
+        });
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('#show-form24').click(function () {
+                $("#spravka6").removeClass('hidden');
+            });
+        });
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('#show-form26').click(function () {
+                $("#spravka6").removeClass('hidden');
+            });
+        });
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('#experience-form2').click(function () {
+                $("#experience2").removeClass('hidden');
+            });
+        });
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('#experience-form3').click(function () {
+                $("#experience3").removeClass('hidden');
+            });
+        });
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('#experience-form4').click(function () {
+                $("#experience4").removeClass('hidden');
+            });
+        });
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('#experience-form5').click(function () {
+                $("#experience5").removeClass('hidden');
+            });
+        });
+</script>
+
+<script>
+        $(document).ready(function() {
+            $('#experience-form6').click(function () {
+                $("#experience6").removeClass('hidden');
+            });
+        });
+</script>
+
+
+
+
+
+
+
+<button type="submit" class="btn btn-primary btn-block">ОТПРАВИТЬ ЗАЯВКУ</button>
+
+
+
+
+		</form>
+
+
+
+
+	</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+<script src="js/common.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/moment-with-locales.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $('#datetimepicker1').datetimepicker({
+	    locale: 'ru',
+		stepping:10,
+		format: 'DD.MM.YYYY',
+		defaultDate: moment('01.01.2018').format('DD.MM.YYYY'),
+		daysOfWeekDisabled:[0,6]
+	  });
+      $('#datetimepicker2').datetimepicker({
+	    locale: 'ru',
+		stepping:10,
+		format: 'DD.MM.YYYY',
+		defaultDate: moment('01.01.2018').format('DD.MM.YYYY'),
+		daysOfWeekDisabled:[0,6]
+	  });
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "mail.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отпрвлено!");
+            });
+    });
+});    
+</script>
+
+
+</html>
